@@ -14,12 +14,12 @@ const Hockey = () => {
     
     //event handlar pass the function 
     const AddToList = (props) => {
-        const {name,time} = props;
+        const {time} = props;
         // console.log(time)
     
             const newTime = parseInt(times) + parseInt(time);  
             setTimes(newTime);
-            localStorage.setItem(name,times) 
+            
      
     }
     
@@ -40,9 +40,14 @@ const Hockey = () => {
     const AddBreakTime = (props) => {
         console.log(props);
         setBreakTime(props); 
-
+        localStorage.setItem('break time',props);
     }
-
+    // get data from localStorage 
+     useEffect(()=>{
+        const breakTime = localStorage.getItem('break time')
+        setBreakTime(breakTime);
+     },[])
+    
     useEffect(()=>{
         fetch('players.json')
         .then(res => res.json())
