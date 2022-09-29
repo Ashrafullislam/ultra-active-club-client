@@ -10,9 +10,7 @@ const Header = () => {
         <img className='logo' src= {Logo} alt=" logo" />
              <p className='logo-title'> Hockey Victoria Play</p>
 
-
         </div>
-            
         </div>
     );
 };
