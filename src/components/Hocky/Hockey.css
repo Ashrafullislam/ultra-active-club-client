@@ -53,7 +53,9 @@
 .break-btn{
  background-color: gainsboro;
  border-radius: 10px;
-
+ display: flex;
+ justify-content: center;
+ padding: 10px;
 }
 .break{
     width: 85%;
@@ -66,6 +68,44 @@
     border-radius: 50%;
     color: white;
     margin: 5px;
+    cursor: pointer;
 
+}
+.break-btn-time:hover{
+  background-color: green;
+}
 
+/* play details part  */
+.play-details{
+    width: 85%;
+    margin: 0 auto;
+}
+.play-time-div{
+   
+    height: 40px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding:  10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items:  center;
+    gap: 20px;
+}
+
+.activity-btn-div{
+    width: 100%;
+    margin-top: 20px;
+}
+.activity-btn{
+    width: 100%;
+    padding: 15px 0;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.activity-btn:hover{
+  background-color: green;
 }

@@ -5,6 +5,7 @@
     "guid": "c4dfa961-3c3c-4b2e-9c7e-cbd3c76d3ced",
     "isActive": true,
     "time": 105,
+    "break": 10,
     "picture": "https://imageio.forbes.com/specials-images/imageserve/600a101b57e80875af3688b5/Detroit-Red-Wings-v-Toronto-Maple-Leafs/1960x0.jpg?format=jpg&width=960",
     "age": 25,
     "eyeColor": "blue",
@@ -18,6 +19,7 @@
     "guid": "d0e3c65d-f60f-4eaf-8bef-40b404ccb3d8",
     "isActive": true,
     "time": 75,
+    "break": 15,
     "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Nathan_Walker.jpg/800px-Nathan_Walker.jpg ",
     "age": 22,
     "eyeColor": "blue",
@@ -32,6 +34,7 @@
     "guid": "1707e1e7-af60-42f4-b7b6-125946154da9",
     "isActive": true,
     "time": 94,
+    "break": 20,
     "picture": " https://i2.wp.com/www.denverpost.com/wp-content/uploads/2016/05/20120327__du-drew-shorep1.jpg?fit=620%2C9999px&ssl=1",
     "age": 22,
     "eyeColor": "brown",
@@ -45,6 +48,7 @@
     "guid": "850cf5f3-192e-41aa-b28e-f2aad54a7918",
     "isActive": true,
     "time": 115,
+    "break": 25,
     "picture": "https://i2.wp.com/www.denverpost.com/wp-content/uploads/2020/04/GettyImages-106685816.jpg?fit=780%2C9999px&ssl=1",
     "age": 23,
     "eyeColor": "blue",
@@ -54,11 +58,12 @@
 
   },
   {
-    "id": "63348808d949807394d2a18b",
+    "id": "63357392cb1bdb348ce00dae",
     "index": 4,
     "guid": "1443ecd0-8386-48e6-b0bd-07bafa0ed93b",
     "isActive": false,
     "time": 82,
+    "break": 30,
     "picture": "https://www.ncaa.com/_flysystem/public-s3/styles/stax_large_content_tile/public-s3/tile-images/graphic/m_hockey_auto_original_10218085.jpeg?      itok=tP2naLbI",
     "age": 26,
     "eyeColor": "brown",
@@ -80,7 +85,7 @@
     "text": "Strickland Reynolds has been such a fixture among the world’s elite for so long that it becomes easy to take him for granted. "
   },
   {
-    "id": "63348808a60943483e2a6c14",
+    "id": "6335739245157285153edad8",
     "index": 6,
     "guid": "dec4e966-d5b1-404e-ae9e-61800845ec30",
     "isActive": false,
@@ -94,11 +99,12 @@
 
   },
   {
-    "id": "63348808a60943483e2a6c14",
+    "id": "63357392c354c47f0ae6cb36",
     "index": 7,
     "guid": "dec4e966-d5b1-404e-ae9e-61800845ec30",
     "isActive": false,
     "time": 56,
+    "break": 10,
     "picture": "https://media.npr.org/assets/img/2021/07/19/gettyimages-1207426004_custom-613ecbbedb302f9da9c0a823a318fc030e39d4c0-s800-c85.webp ",
     "age": 24,
     "eyeColor": "green",
@@ -107,11 +113,12 @@
     "text": " Usraf Tesla has more than lived up to all the hype that preceded him before he was selected by the Pittsburgh Penguins with the No. "
   },
   {
-    "id": "63348808a60943483e2a6c14",
+    "id": "63357392f9f12d942c62497b",
     "index": 8,
     "guid": "dec4e966-d5b1-404e-ae9e-61800845ec30",
     "isActive": false,
     "time": 73,
+    "break": 15,
     "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFIpFDqMM39wO6YHmwLKJaDGS6taXC_Vvfdw&usqp=CAU ",
     "age": 24,
     "eyeColor": "green",

@@ -4,8 +4,29 @@ import  './Hockey.css';
 import Profile from '../../profile.jpg';
 
 const Hockey = () => {
+    
     const [players,setPlayers] = useState([]);
-    // console.log(players)
+    const [times,setTimes] = useState([0]);
+    //set time break 
+    const [breakTime,setBreakTime] = useState([]);
+    
+
+    //event handlar pass the function 
+    const AddToList = (props) => {
+        const {name,time} = props;
+        console.log(time)
+        const newTime = parseInt(times) + parseInt(time);  
+        setTimes(newTime);
+        localStorage.setItem(name,times)
+     
+    }
+
+    // add event handlar to set the breake time 
+    const AddBreakTime = (props) => {
+        console.log(props);
+        setBreakTime(props);
+        
+    }
 
     useEffect(()=>{
         fetch('players.json')
@@ -17,7 +38,9 @@ const Hockey = () => {
             <div className='Player-container'>
              <div className='player-inner-div'>
              {
-             players.map(player => <Player key = {player.id} player = {player} > </Player> )
+             players.map(player => <Player key = {player.id} player = {player} 
+             handlar = {AddToList}
+             >  </Player>)
             }
              </div>
         </div>
@@ -45,21 +68,40 @@ const Hockey = () => {
                    <small> <span className='font-style'> 24 </span> yrs</small>
                     <p> Age</p>
                    </div>
-                  
               </div>
 
               <div className='break'>
-                <h4> Add Break </h4>
+                <h3> Add Break </h3>
                 <div className='break-btn'>
-                    <button className='break-btn-time'> 10m</button> 
-                    <button className='break-btn-time'> 15m</button> 
-                    <button className='break-btn-time'> 20m</button> 
-                    <button className='break-btn-time'> 25m</button> 
-                    <button className='break-btn-time'> 30m</button> 
-
+                    <button onClick={()=> AddBreakTime(10)} className='break-btn-time'> 10m</button> 
+                    <button  onClick={()=> AddBreakTime(15)}  className='break-btn-time'> 15m</button> 
+                    <button onClick={()=> AddBreakTime(20)}  className='break-btn-time'> 20m</button> 
+                    <button  onClick={()=> AddBreakTime(25)}  className='break-btn-time'> 25m</button> 
+                    <button onClick={()=> AddBreakTime(30)}  className='break-btn-time'> 30m</button> 
                 </div>
-              
               </div>
+              
+              <div className="play-details">
+                 <h3> Play Details</h3>
+                  <div className='play-time'>
+                     <div className='play-time-div'>
+                        <span> <b> Play Time</b> </span>
+                        <small> <span> {times} </span>  minutes </small>
+                    </div>
+
+                 <div style={{marginTop:15}}>  
+                    <div className='play-time-div'>
+                        <span> <b> Break Time </b> </span>
+                        <small> <span>{breakTime} </span> minutes </small>
+                      </div>
+                  </div>
+                 
+                  </div>
+                <div className='activity-btn-div'> 
+                    <button className='activity-btn' > Activity Compleated </button>
+                </div>
+
+              </div> 
          </div>
     </div>
     ); 

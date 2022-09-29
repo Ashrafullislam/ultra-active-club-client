@@ -3,7 +3,8 @@ import './Player.css';
 
 const Player = (props) => {
   const {name,age,picture,time,gender,text} = props.player
-  console.log(props.player);
+  const handlar = props.handlar;
+  // console.log(props.handlar);
   return (
     <div className='player'>
     
@@ -16,7 +17,7 @@ const Player = (props) => {
       <p className='about'>About: <small>{text} </small></p>
       </div>
       <div className='player-add-btn'>
-        <button className='add-to-list-btn'> Add to List</button>
+        <button onClick={()=>handlar(props.player)} className='add-to-list-btn'> Add to List</button>
       </div>
       
     </div>

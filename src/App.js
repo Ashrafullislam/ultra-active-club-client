@@ -1,14 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/Hocky/Hockey';
-import Headers from './components/Header/Header'; 
+import Header from './components/Header-Part/Header';
+import Hockey from './components/Hocky/Hockey';
+import FooterPart from './components/Footer/footer';
 
 function App() {
   return (
     <div className="Play">
-      <Headers > </Headers>
      <Header > </Header>
- 
+     <Hockey> </Hockey>
+     <FooterPart > </FooterPart>
     </div>
   );
 }
