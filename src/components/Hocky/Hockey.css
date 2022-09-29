@@ -99,7 +99,7 @@
 .activity-btn{
     width: 100%;
     padding: 15px 0;
-    background-color: blue;
+    background-color: navy;
     border: none;
     border-radius: 10px;
     color: white;
@@ -125,7 +125,7 @@
     }
     .break-btn-time{
         padding: 14px 8px;
-        background-color: blue;
+        background-color: navy;
         margin: 3px;
         cursor: pointer;
     
