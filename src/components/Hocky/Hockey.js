@@ -14,10 +14,11 @@ const Hockey = () => {
     //event handlar pass the function 
     const AddToList = (props) => {
         const {name,time} = props;
-        console.log(time)
-        const newTime = parseInt(times) + parseInt(time);  
-        setTimes(newTime);
-        localStorage.setItem(name,times)
+        // console.log(time)
+    
+            const newTime = parseInt(times) + parseInt(time);  
+            setTimes(newTime);
+            localStorage.setItem(name,times) 
      
     }
 
@@ -25,7 +26,7 @@ const Hockey = () => {
     const AddBreakTime = (props) => {
         console.log(props);
         setBreakTime(props);
-        
+
     }
 
     useEffect(()=>{
