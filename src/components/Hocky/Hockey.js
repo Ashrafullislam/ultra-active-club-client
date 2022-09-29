@@ -10,7 +10,7 @@ const Hockey = () => {
     //set time break 
     const [breakTime,setBreakTime] = useState([]);
     
-
+    
     //event handlar pass the function 
     const AddToList = (props) => {
         const {name,time} = props;
@@ -25,7 +25,7 @@ const Hockey = () => {
     // add event handlar to set the breake time 
     const AddBreakTime = (props) => {
         console.log(props);
-        setBreakTime(props);
+        setBreakTime(props); 
 
     }
 
@@ -39,7 +39,7 @@ const Hockey = () => {
             <div className='Player-container'>
              <div className='player-inner-div'>
              {
-             players.map(player => <Player key = {player.id} player = {player} 
+             players.map(player => <Player key = {player.id} player = {player}  
              handlar = {AddToList}
              >  </Player>)
             }

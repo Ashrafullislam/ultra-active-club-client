@@ -17,6 +17,7 @@
 .profile-container{
     display: flex;
     flex-direction: column;
+ 
 }
 .profile{
     display: flex;
@@ -47,9 +48,7 @@
     font-weight: 700;
 }
 /* add break btn  */
-.break{
-  
-}
+
 .break-btn{
  background-color: gainsboro;
  border-radius: 10px;
@@ -105,7 +104,50 @@
     color: white;
     font-size: 18px;
     cursor: pointer;
+    margin-bottom: 10px; 
 }
 .activity-btn:hover{
   background-color: green;
+}
+
+@media screen and (max-width:1050px){
+
+    .Hockey{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .player-inner-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .break-btn-time{
+        padding: 14px 8px;
+        background-color: blue;
+        margin: 3px;
+        cursor: pointer;
+    
+    }
+}
+
+@media screen and  (max-width: 858px) and (min-width:300px){
+    .Hockey{
+        display: flex;
+        flex-direction: column-reverse;
+     
+    }
+    .player-inner-div{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .break-btn-time{
+        padding: 14px 8px;
+        background-color: blue;
+        margin: 2vw;
+        cursor: pointer;
+    
+    }
 }
