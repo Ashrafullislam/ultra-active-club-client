@@ -1,0 +1,23 @@
+.Header-logo{
+    background-color: rgba(105, 102, 102, 0.471);
+    width: 100%;
+    padding: 5px;
+
+}
+.Hocky-logo{
+    width: 90%;
+    margin: 0 auto;
+
+}
+.logo{
+    width: 120px;
+    height: 30px;
+
+}
+.logo-title{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 2px;
+    color: navy; 
+    margin-bottom: 0;
+}

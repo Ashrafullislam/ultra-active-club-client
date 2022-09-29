@@ -1,0 +1,18 @@
+.Hockey{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    
+    
+}
+.Player-container{
+     width: 100%;
+    background-color: rgba(220, 220, 220, 0.471);
+    margin-bottom: 0;
+  
+}
+.player-inner-div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin: 0 auto;
+}
