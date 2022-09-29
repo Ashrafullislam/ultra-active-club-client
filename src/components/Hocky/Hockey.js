@@ -2,13 +2,14 @@ import React, { useEffect, useState,  } from 'react';
 import Player from '../players/Player';
 import  './Hockey.css';
 import Profile from '../../profile.jpg';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Hockey = () => {
     
     const [players,setPlayers] = useState([]);
     const [times,setTimes] = useState([0]);
     //set time break 
-    const [breakTime,setBreakTime] = useState([]);
+    const [breakTime,setBreakTime] = useState([0]);
     
     
     //event handlar pass the function 
@@ -21,7 +22,20 @@ const Hockey = () => {
             localStorage.setItem(name,times) 
      
     }
-
+    
+    const notify = () => {
+       
+        toast.success('Your activation successfully compleated', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
+            
+    }
     // add event handlar to set the breake time 
     const AddBreakTime = (props) => {
         console.log(props);
@@ -96,10 +110,12 @@ const Hockey = () => {
                         <small> <span>{breakTime} </span> minutes </small>
                       </div>
                   </div>
-                 
-                  </div>
+                </div>
+
                 <div className='activity-btn-div'> 
-                    <button className='activity-btn' > Activity Compleated </button>
+
+                    <button onClick={notify} className='activity-btn' > Activity Compleated </button>
+                    <ToastContainer />
                 </div>
 
               </div> 
